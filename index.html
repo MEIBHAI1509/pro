@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="ben-sweet-2LowviVHZ-E-unsplash.jpg">
+    <title>My Profile</title>
+</head>
+
+<body>
+    <div id="home" class="hero">
+        <nav>
+            <h2 class="logo">Pro<span>file</span></h2>
+            <ul class="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#service">Works</a></li>
+                <li><a href="#education">Education</a></li>
+            </ul>
+        </nav>
+        <div class="content">
+            <h4>Hello, My name is</h4>
+            <h1>Meiyarasan</h1>
+            <h3>I am web Developer.</h3>
+            <div class="newslatter">
+                <form>
+                    <input type="email" name="email" placeholder="Enter your email id">
+                    <input type="submit" name="submit" value="Lets start">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <section id="about" class="about">
+        <div class="main">
+            <img src="./meiprofile.webp" alt="">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <h5>Developer and Designer</h5>
+                <p>
+                    As a Beginner in the Industrial field, while making a positive
+                    contribution, I would like to build a career, making the best use of my creative
+                    and logical skills to perform the job efficiency.
+                </p>
+                <button><a target="_blank" href="RESUME.pdf">Download CV</a></button>
+
+
+            </div>
+        </div>
+    </section>
+
+    <section id="service" class="service">
+        <div class="title">
+            <h2>My <span>Projects</span></h2>
+        </div>
+        <div class="cards">
+            <div class="grid-two-columns">
+                <div class="box">
+                    <div class="chess">
+                        <a target="_blank" href="https://www.101computing.net/html-chess-challenge/"><img
+                                src="5f9c98ca740569d1a4ca1c15.jpg" alt=""></a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="chess ">
+                        <a target="_blank" href="./tic.html"><img src="a.jpg" alt=""></a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="chess">
+                        <a target="_blank"
+                            href="https://www.makeuseof.com/build-a-simple-calculator-using-html-css-javascript/"><img
+                                src="b.jpg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="education">
+        <div>
+
+        </div>
+    </section>
+
+</body>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        font-family: sans-serif;
+        box-sizing: border-box;
+    }
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    .hero {
+        height: 100vh;
+        width: 100%;
+        background-image: url(./photo-1457449940276-e8deed18bfff.avif);
+        background-position: center;
+        background-size: cover;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo {
+        color: white;
+        font-size: 35px;
+        letter-spacing: 1px;
+        cursor: pointer;
+    }
+
+    span {
+        color: red;
+    }
+
+    nav .logo {
+        position: fixed;
+        left: 0;
+        top: 0;
+    }
+
+    nav ul {
+        position: fixed;
+        right: 0;
+        top: 0;
+    }
+
+    .logo {
+        position: relative;
+        left: 0;
+    }
+
+    nav ul li {
+        list-style: none;
+        position: relative;
+        right: 0;
+        display: inline-block;
+        justify-content: space-around;
+        padding: 10px 25px;
+    }
+
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        text-transform: capitalize;
+    }
+
+    nav ul li a:hover {
+        color: red;
+        transition: 0.4s;
+        ;
+    }
+
+    .content {
+        position: absolute;
+        top: 50%;
+        left: 8%;
+        transform: translateY(-50%);
+    }
+
+    h1 {
+        color: white;
+        margin: 20px 0px 20px;
+        font-size: 75px;
+    }
+
+    h3 {
+        color: white;
+        font-size: 25px;
+        margin-bottom: 50px;
+    }
+
+    h4 {
+        color: #fcfc;
+        letter-spacing: 2px;
+        font-size: 20px;
+    }
+
+    .newslatter form {
+        width: 380px;
+        max-width: 100%;
+        position: relative;
+    }
+
+    .newslatter form input:first-child {
+        display: inline-block;
+        width: 100%;
+        padding: 14px 130px 14px 15px;
+        border: 2px solid red;
+        outline: none;
+        border-radius: 30px;
+    }
+
+    .newslatter form input:last-child {
+        position: absolute;
+        display: inline-block;
+        outline: none;
+        border: none;
+        padding: 10px 30px;
+        border-radius: 30px;
+        background-color: red;
+        color: white;
+        box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585;
+        top: 6px;
+        right: 6px;
+        cursor: pointer;
+        transition: .4s;
+    }
+
+    .about {
+        width: 100%;
+        padding: 100px 0px;
+        background-color: #000;
+    }
+
+    .about img {
+        height: auto;
+        width: 430px;
+    }
+
+    .about-text {
+        width: 550px;
+    }
+
+    .main {
+        width: 1130px;
+        max-width: 95%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .about-text h2 {
+        color: white;
+        font-size: 75px;
+        text-transform: capitalize;
+        margin-bottom: 20px;
+    }
+
+    .about-text h5 {
+        color: white;
+        letter-spacing: 2px;
+        font-size: 22px;
+        margin-bottom: 25px;
+        text-transform: capitalize;
+    }
+
+    .about-text p {
+        color: #fcfc;
+        letter-spacing: 1px;
+        line-height: 28px;
+        font-size: 18px;
+        margin-bottom: 45px;
+    }
+
+    button {
+        background-color: rgb(253, 0, 13);
+        color: white;
+        text-decoration: none;
+        border: 2px solid transparent;
+        font-weight: bold;
+        padding: 13px 30px;
+        border-radius: 30px;
+        transition: .4s;
+        letter-spacing: 1px;
+    }
+
+    button:hover {
+        background-color: transparent;
+        border: 2px solid rgb(253, 250, 250);
+        cursor: pointer;
+        letter-spacing: 2px;
+    }
+
+    button a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .service {
+        background: #101010;
+        width: 100vw;
+        height: 100vh;
+        padding: 100px 0px;
+    }
+
+    .title h2 {
+        color: white;
+        font-size: 75px;
+        margin: 30px auto;
+        text-align: center;
+        margin-bottom: 10rem;
+        margin-top: 3rem;
+    }
+
+    .box {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .service p {
+        color: white;
+    }
+
+    .chess a img {
+        width: 20rem;
+        transition: 2s;
+        border: 10px solid white;
+    }
+
+
+    .chess img:hover {
+        width: 17rem;
+    }
+
+    .cards .grid-two-columns {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+</style>
+
+</html>
